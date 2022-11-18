@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+#game {
+    border: 1px solid white;
+    width: 500px;
+    height: 600px;
+    background-color: aqua;
+    margin: auto;
+    margin-top: 10px;
+    background-image: url(road.jpg);
+    background-size: contain;
+    overflow: hidden;
+}
+
+#car {
+    width: 100px;
+    height: 100px;
+    background-image: url(car.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation: move 4s linear infinite;
+    background-color: red;
+}
+
+#jeep {
+    width: 100px;
+    height: 100px;
+    background-image: url(jeep.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation: jeep 3s linear infinite;
+    background-color: blueviolet;
+}
+
+
+@keyframes move {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 630px;
+    }
+}
+
+@keyframes jeep {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 625px;
+    }
+}
+
+#racecar {
+    width: 100px;
+    height: 120px;
+    background-image: url(racecar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 250px;
+    left: 0;
+    background-color: blue;
+
+}
+
+#result {
+    color: white;
+    border: 1px solid white;
+    width: 400px;
+    height: 250px;
+    background-color: rgb(148, 89, 204);
+    position: absolute;
+    top: 0;
+    left: 500px;
+    border-radius: 10px;
+    display: none;
+}
+
+#result h1 {
+    font-size: 50px;
+    padding-left: 80px;
+    font-family: 'Changa', sans-serif;
+}
+
+#score {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Changa', sans-serif;
+    margin-left: 90px;
+}
+
+button {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 120px;
+    margin-top: 20px;
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    font-family: 'Changa', sans-serif;
+    cursor: pointer;
+}
