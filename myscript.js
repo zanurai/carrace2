@@ -54,23 +54,7 @@ window.addEventListener("keydown", function (e) {
 
 });
 
-//display the gameOver
-/*setInterval(function Gameover() {
 
-    let carTop = parseInt(window.getComputedStyle(car).getPropertyValue("top"));
-    let racecarLeft = parseInt(window.getComputedStyle(car).getPropertyValue("left"));
-    let carLeft = parseInt(window.getComputedStyle(car).getPropertyValue("left"));
-    let jeepTop = parseInt(window.getComputedStyle(jeep).getPropertyValue("top"));
-    let jeepLeft = parseInt(window.getComputedStyle(jeep).getPropertyValue("left"));
-
-    if ((carLeft === racecarLeft) && (carTop > 350) && (carTop < 570)) {
-        result.style.display = "block";
-        game.style.display = "none";
-        score.innerHTML = `score: ${counter}`;
-
-        counter = 0;
-    }
-}, 50)*/
 
 setInterval(function gameover() {
     let carTop = parseInt(window.getComputedStyle(car).getPropertyValue("top"));
