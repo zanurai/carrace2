@@ -78,5 +78,7 @@ setInterval(function gameover() {
         score.innerHTML = `score: ${counter}`;
         accSound.play();
         musicSound.pause();
+
+        counter = 0;
     }
 }, 50) 
